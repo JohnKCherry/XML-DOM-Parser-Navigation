@@ -1,0 +1,15 @@
+<root>
+<level1A a1="value_a1" a2="value_a2">This is level 1, Item A
+ <level2>This is level 2, Item A_21</level2>
+ <level2>This is level 2, Item A_22</level2>
+ <level2></level2>
+</level1A>
+<level1B b1="value_b1" b2="value_b2" ></level1B>
+<level1C>This is level 1, Item C
+ <level2 >This is level 2, Item C_21
+ <level3>This is level 3, Item C_21_31</level3>
+ <level3>This is level 3, Item C_21_32</level3>
+ </level2>
+ <level2 c1="value_c1" c2= "value_c2">This is level 2, Item C_22 </level2>
+</level1C>
+</root>

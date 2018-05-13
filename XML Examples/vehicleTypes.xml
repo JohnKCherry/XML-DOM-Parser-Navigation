@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--This is the way to write a comment-->
+<vehicles>The root element (must be exactly one) is opened; this the first opening tag
+ <cars type = "passenger car">
+ <sedan no_doors="4"/><!--This was both an openening and a closing tag-->
+ <jeep price="high">Another jeep defined below</jeep>
+ <formula1 price= "very high">
+ <![CDATA[<tag_to_be_ignored>Whatever placed here remains unparsed,
+ </tag_to_be_ignored>, etc, qwerty, <, !, ""=, ASDD, etc,...]]>
+ </formula1>
+ </cars>
+
+ <trolleys/><!--only a placeholder - to be expanded later-->
+
+ <ambulances type ="public use" importance="1">
+ <?targetdatabase SELECT * FROM Hospitals?>
+ </ambulances>
+
+ <jeeps type="military car" importance="2">
+ <jeep price="3000" colour="brown" user="army"/>
+ <jeep price="5200" user="navy" colour="gray"/>
+ <jeep price="2800" colour="blue" user="air force"/>
+ </jeeps>
+ <lories>
+ Some text belonging to 'lories'
+ <lory1 no_of_axes="2" tons="three">lory one text</lory1>
+ <lory2 no_of_axes="6" tons="14">
+ <traction motor="400PS" no_of_axes="3"/>
+ <tender lenght="15.53m" no_of_axes="3"/>
+ </lory2>
+ More text belonging to 'lories', placed between its subelements
+ <military_lory/>
+ </lories>
+</vehicles>
+<!--the root element has just been closed; this is necessarily the last closing tag-->
